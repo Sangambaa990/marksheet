@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>marksheet</title>
+    <style>
+        
+        table{
+           position: relative;
+           margin-left: 22%;
+           margin-top: 10%;
+           font-size: 40px;
+        }
+        #headings{
+            background-color: aqua;
+        }
+
+        #row_1{
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <table border="1">
+        <tr id="headings">
+            <th id="headings_1">subject</th>
+            <th id="headings_2">theory</th>
+            <th id="headings_3">pratical</th>
+            <th id="headings_4">total</th>
+            <th id="headings=5">total in words</th>
+            <th id="grade">grade</th>
+        </tr>
+
+        <tr id="row">
+            <td id="r1">maths</td>
+            <td id="r2"></td>
+            <td id="r3"></td>
+            <td id="r4"></td>
+            <td id="r5"></td>
+            <td id="g1"></td>
+        </tr>
+        <tr id="row_1">
+            <td id="r6">english</td>
+            <td id="r7"></td>
+            <td id="r8"></td>
+            <td id="r9"></td>
+            <td id="r10"></td>
+            <td id="g2"></td>
+        </tr>
+        <tr id="row_2">
+            <td id="r11">hindi</td>
+            <td id="r12"></td>
+            <td id="r13"></td>
+            <td id="r14"></td>
+            <td id="r15"></td>
+            <td id="g3"></td>
+        </tr>
+        <tr id="row_3">
+            <td id="r16">science</td>
+            <td id="r17"></td>
+            <td id="r18"></td>
+            <td id="r19"></td>
+            <td id="r20"></td>
+            <td id="g4"></td>
+        </tr>
+        <tr id="row_1">
+            <td id="r21">sst</td>
+            <td id="r22"></td>
+            <td id="r23"></td>
+            <td id="r24"></td>
+            <td id="r25"></td>
+            <td id="g5"></td>
+        </tr>
+
+    </table>
+<script>
+    // marks of maths subjects
+    let maths=parseInt(prompt("enter your maths theory marks"))
+    document.getElementById('r2').innerHTML=maths
+    let r3=parseInt(prompt("enter your maths pratical marks"))
+    document.getElementById('r3').innerHTML=r3
+    let r4=parseInt(prompt("enter your maths total marks"))
+    document.getElementById('r4').innerHTML=r4
+    var r5 = prompt("enter your maths total marks in words");
+    document.getElementById('r5').innerHTML = r5
+    var g1=prompt("enter your maths grade");
+    document.getElementById('g1').innerHTML=g1
+   
+    if(maths<=30){
+        alert("f")
+    }
+    else if(maths>=31 &&maths<=30){
+        alert('e')
+        
+    }
+
+    
+
+    // // marks of english subjects
+
+    let english=parseInt(prompt("enter your english theory marks"))
+    document.getElementById('r7').innerHTML=english
+    let r8=parseInt(prompt("enter your english pratical marks"))
+    document.getElementById('r8').innerHTML=r8
+    let r9=parseInt(prompt("enter your english total marks"))
+    document.getElementById('r9').innerHTML=r9
+    var r10=prompt("enter your english total marks in words")
+    document.getElementById('r10').innerHTML=r10
+    var g2=prompt("enter your english grade")
+    document.getElementById('g2').innerHTML=g2
+    
+
+    // // marks of hindi subjects
+
+    let hindi=parseInt(prompt("enter your hindi theory marks"))
+    document.getElementById('r12').innerHTML=hindi
+    let r13=parseInt(prompt("enter your hindi pratical marks"))
+    document.getElementById('r13').innerHTML=r13
+    let r14=parseInt(prompt("enter your hindi total marks"))
+    document.getElementById('r14').innerHTML=r14
+    var r15=prompt("enter your hindi total marks in words")
+    document.getElementById('r15').innerHTML=r15
+    var g3=prompt("enter your hindi grade")
+    document.getElementById('g3').innerHTML=g3
+
+    // // marks of Science Subjects
+
+    let science=parseInt(prompt("enter your science theory marks"))
+    document.getElementById('r17').innerHTML=science
+    let r18=parseInt(prompt("enter your science pratical marks"))
+    document.getElementById('r18').innerHTML=r18
+    let r19=parseInt(prompt("enter your science total marks"))
+    document.getElementById('r19').innerHTML=r19
+    var r20=prompt("enter your science total marks in words")
+    document.getElementById('r20').innerHTML=r20
+    var g4=prompt("enter your science grade")
+    document.getElementById('g4').innerHTML=g4
+
+    // // marks of sst subjects
+
+    let sst=parseInt(prompt("enter your sst theory marks"))
+    document.getElementById('r22').innerHTML=sst
+    let r23=parseInt(prompt("enter your sst pratical marks"))
+    document.getElementById('r23').innerHTML=r23
+    let r24=parseInt(prompt("enter your sst total marks"))
+    document.getElementById('r24').innerHTML=r24
+    var r25=prompt("enter your sst total marks in words")
+    document.getElementById('r25').innerHTML=r25
+    var g5=prompt("enter your sst grade")
+    document.getElementById('g5').innerHTML=g5
+
+   
+    
+        
+
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
